@@ -32,7 +32,7 @@ goto Fertig
 :j_q2
 echo Wollen Sie die Dateien in mp4-Dateien umwandeln? (Dauert eine Weile/ nicht empfohlen) [j/n]
 set /P Variable="j/n:
-if not "%Variable%" == "j" if not "%Variable%" == "n" echo Bitte schreiben j für Ja oder n für Nein in die Konsole&&goto j_q2
+if not "%Variable%" == "j" if not "%Variable%" == "n" echo Bitte schreiben j fuer Ja oder n fuer Nein in die Konsole&&goto j_q2
 if not "%Variable%" == "n" set Variable=--recode-video mp4&&goto j_q2_rec
 set Variable=
 :j_q2_rec
@@ -57,7 +57,7 @@ youtube-dl -F -a Videos(URL).txt
 echo.
 echo Wollen Sie die Audiospur und Videospur zusammenfuegen? [j/n]
 set /P eingabe3="j/n: "
-if not "%eingabe3%" == "j" if not "%eingabe3%" == "n" echo Bitte schreiben j für Ja oder n für Nein in die Konsole&&goto j_q3_merge
+if not "%eingabe3%" == "j" if not "%eingabe3%" == "n" echo Bitte schreiben j fuer Ja oder n fuer Nein in die Konsole&&goto j_q3_merge
 if "%eingabe3%" == "n" goto j_q3_merge_n
 
 echo Welches Audioformat wollen Sie?
@@ -67,7 +67,7 @@ set /P eingabe2="Format Nummer: "
 :j_q3_merge_j_rec
 echo Wollen Sie die Dateien in mp4-Datein umwandeln (Dauert eine Weile/ nicht empfohlen) [j/n]
 set /P Variable="j/n:
-if not "%Variable%" == "j" if not "%Variable%" == "n" echo Bitte schreiben j für Ja oder n für Nein in die Konsole&&goto j_q3_merge_j_rec
+if not "%Variable%" == "j" if not "%Variable%" == "n" echo Bitte schreiben j fuer Ja oder n fuer Nein in die Konsole&&goto j_q3_merge_j_rec
 if not "%Variable%" == "n" set Variable=--recode-video mp4&&goto j_q3_rec
 set Variable=
 :j_q3_rec
@@ -80,7 +80,7 @@ set /P eingabe="Format Nummer: "
 :j_q3_merge_n_rec
 echo Wollen Sie die Datei in eine mp4-Datei umwandeln (Dauert eine Weile/ nicht empfohlen) [j/n]
 set /P Variable="j/n:
-if not "%Variable%" == "j" if not "%Variable%" == "n" echo Bitte schreiben j für Ja oder n für Nein in die Konsole&&goto j_q3_merge_n_rec
+if not "%Variable%" == "j" if not "%Variable%" == "n" echo Bitte schreiben j fuer Ja oder n fuer Nein in die Konsole&&goto j_q3_merge_n_rec
 if not "%Variable%" == "n" set Variable=--recode-video mp4&&goto j_q3_merge_n_rec_j
 set Variable=
 :j_q3_merge_n_rec_j
@@ -107,7 +107,7 @@ goto Fertig
 :Nein
 
 cls
-echo Fügen Sie die Youtube URL ein (Bsp.: https://www.youtube.com/watch?v=72QAAOaYW2M, https://youtu.be/72QAAOaYW2M)
+echo Fuegen Sie die Youtube URL ein (Bsp.: https://www.youtube.com/watch?v=72QAAOaYW2M, https://youtu.be/72QAAOaYW2M)
 set /P URL="URL: "
 cls
 
@@ -131,7 +131,7 @@ goto Fertig
 :n_q2
 echo Wollen Sie die Datei in eine mp4-Datei umwandeln (Dauert eine Weile/ nicht empfohlen) [j/n]
 set /P Variable="j/n:
-if not "%Variable%" == "j" if not "%Variable%" == "n" echo Bitte schreiben j für Ja oder n für Nein in die Konsole&&goto n_q2
+if not "%Variable%" == "j" if not "%Variable%" == "n" echo Bitte schreiben j fuer Ja oder n fuer Nein in die Konsole&&goto n_q2
 if not "%Variable%" == "n" set Variable=--recode-video mp4&&goto n_q2_rec
 set Variable=
 :n_q2_rec
@@ -151,9 +151,9 @@ youtube-dl -i -F %URL%
 
 :n_q3_merge
 echo.
-echo Wollen Sie die Audiospur und Videospur zusammenfügen? [j/n]
+echo Wollen Sie die Audiospur und Videospur zusammenfuegen? [j/n]
 set /P eingabe3="j/n: "
-if not "%eingabe3%" == "j" if not "%eingabe3%" == "n" echo Bitte schreiben j für Ja oder n für Nein in die Konsole&&goto n_q3_merge
+if not "%eingabe3%" == "j" if not "%eingabe3%" == "n" echo Bitte schreiben j fuer Ja oder n fuer Nein in die Konsole&&goto n_q3_merge
 if "%eingabe3%" == "n" goto n_q3_merge_n
 
 
@@ -164,7 +164,7 @@ set /P eingabe2="Format Nummer: "
 :n_q3_merge_j_rec
 echo Wollen Sie die Datei in eine mp4-Datei umwandeln (Dauert eine Weile/ nicht empfohlen) [j/n]
 set /P Variable="j/n:
-if not "%Variable%" == "j" if not "%Variable%" == "n" echo Bitte schreiben j für Ja oder n für Nein in die Konsole&&goto n_q3_merge_j_rec
+if not "%Variable%" == "j" if not "%Variable%" == "n" echo Bitte schreiben j fuer Ja oder n fuer Nein in die Konsole&&goto n_q3_merge_j_rec
 if not "%Variable%" == "n" set Variable=--recode-video mp4&&goto n_q3_merge_j_rec_j
 set Variable=
 :n_q3_merge_j_rec_j
@@ -177,7 +177,7 @@ set /P eingabe="Format Nummer: "
 :n_q3_merge_n_rec
 echo Wollen Sie die Datei in eine mp4-Datei umwandeln (Dauert eine Weile/ nicht empfohlen) [j/n]
 set /P Variable="j/n:
-if not "%Variable%" == "j" if not "%Variable%" == "n" echo Bitte schreiben j für Ja oder n für Nein in die Konsole&&goto n_q3_merge_n_rec
+if not "%Variable%" == "j" if not "%Variable%" == "n" echo Bitte schreiben j fuer Ja oder n fuer Nein in die Konsole&&goto n_q3_merge_n_rec
 if not "%Variable%" == "n" set Variable=--recode-video mp4&&goto n_q3_merge_n_rec_j
 set Variable=
 :n_q3_merge_n_rec_j
@@ -206,7 +206,7 @@ echo.
 echo.
 echo.
 echo Es gab einen Fehler
-echo Bitte überprüfen Sie Ihre Angaben!
+echo Bitte ueberpruefen Sie Ihre Angaben!
 echo.
 PAUSE
 goto Ende12
